@@ -1,14 +1,17 @@
 Name:		python-sphinxcontrib-jquery
 Version:	4.1
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcontrib-jquery-%{version}.tar.gz
 Summary:	Extension to include jQuery on newer Sphinx releases
 URL:		https://pypi.org/project/sphinxcontrib-jquery/
 License:	GPL
 Group:		Development/Python
-BuildRequires:	python%{pyver}dist(pip)
 BuildArch:	noarch
 BuildSystem:	python
+BuildRequires:	python%{pyver}dist(flit-core)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(wheel)
+
 
 %description
 Extension to include jQuery on newer Sphinx releases
